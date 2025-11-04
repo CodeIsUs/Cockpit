@@ -74,26 +74,10 @@ jobs:
           name: opkg-feed
           path: packages/
       
-      - name: Debug - List downloaded files
-        run: |
-          echo "Files in packages directory after artifact download:"
-          find packages -type f -name "*.ipk" -o -name "Packages" -o -name "Packages.gz" | sort
-          echo ""
-          echo "Contents of packages/all:"
-          ls -lah packages/all/ || true
-      
       - name: Configure Git
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-      
-      - name: Debug - Check git status before commit
-        run: |
-          echo "Git status before adding files:"
-          git --no-pager status
-          echo ""
-          echo "Files that would be ignored:"
-          git --no-pager status --ignored packages/
       
       - name: Commit and push feed
         run: |
@@ -101,16 +85,14 @@ jobs:
           # This is necessary because these files are ignored on main branch but needed on gh-pages
           git add -f packages/
           
-          echo "Git status after adding files:"
-          git --no-pager status
-          
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            echo "Changes to be committed:"
-            git --no-pager diff --staged --name-only
+            echo "Committing package feed updates..."
+            git --no-pager diff --staged --stat
             git commit -m "Update package feed indexes [skip ci]"
             git push origin gh-pages
+            echo "Package feed successfully updated on gh-pages"
           fi
         continue-on-error: true
       

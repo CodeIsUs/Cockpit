@@ -1,0 +1,87 @@
+Description: base
+Maintainer: dream-alpha
+Package: enigma2-plugin-extensions-base
+Version: 0.0.7
+Architecture: all
+Depends: samba
+Filename: enigma2-plugin-extensions-base_0.0.7_all.ipk
+Size: 2894
+MD5Sum: 1e8b5f5b12055295dd76c24455313fd8
+
+Description: PiconCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-extensions-piconcockpit
+Version: 0.1.16
+Architecture: all
+Depends: enigma2-plugin-skin-e2darkosaddon
+Filename: enigma2-plugin-extensions-piconcockpit_0.1.16_all.ipk
+Size: 34934
+MD5Sum: 1035dc0f681ebaf59967b7281ce7a754
+
+Description: TestCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-extensions-testcockpit
+Version: 0.0.24
+Architecture: all
+Depends: enigma2-plugin-systemplugins-cachecockpit
+Filename: enigma2-plugin-extensions-testcockpit_0.0.24_all.ipk
+Size: 36906
+MD5Sum: 6f02761e7778fbd6b10dd1fbd110dbdc
+
+Description: E2DarkOSAddon
+Maintainer: dream-alpha
+Package: enigma2-plugin-skin-e2darkosaddon
+Version: 0.0.1
+Architecture: all
+Filename: enigma2-plugin-skin-e2darkosaddon_0.0.1_all.ipk
+Size: 1314
+MD5Sum: 04677b837834d46cc980360c05094ec6
+
+Description: ComponentsCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-skincomponents-cockpit
+Version: 0.0.2
+Architecture: all
+Conflicts: enigma2-plugin-systemplugins-cockpitcomponents, enigma2-skincomponents-compatibilitycomponents, enigma2-plugin-systemplugins-componentscockpit
+Replaces: enigma2-plugin-systemplugins-cockpitcomponents, enigma2-skincomponents-compatibilitycomponents, enigma2-plugin-systemplugins-componentscockpit
+Filename: enigma2-plugin-skincomponents-cockpit_0.0.2_all.ipk
+Size: 15756
+MD5Sum: a3cb199ba1e093a80d7dbfe0262d6c9d
+
+Description: CacheCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-systemplugins-cachecockpit
+Version: 0.0.21
+Architecture: all
+Depends: python3-sqlite3, python3-requests, enigma2-plugin-systemplugins-mountcockpit, enigma2-plugin-systemplugins-jobcockpit
+Filename: enigma2-plugin-systemplugins-cachecockpit_0.0.21_all.ipk
+Size: 56902
+MD5Sum: 4740644741b9da116764e580600b4e65
+
+Description: CoverCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-systemplugins-covercockpit
+Version: 0.0.2
+Architecture: all
+Filename: enigma2-plugin-systemplugins-covercockpit_0.0.2_all.ipk
+Size: 17048
+MD5Sum: 33b2d84364fe575dc7cdfb0f3ad7ee0f
+
+Description: JobCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-systemplugins-jobcockpit
+Version: 0.0.3
+Architecture: all
+Filename: enigma2-plugin-systemplugins-jobcockpit_0.0.3_all.ipk
+Size: 19534
+MD5Sum: 2c4adb444ebdfe0ddd89d18a840196c9
+
+Description: MountCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-systemplugins-mountcockpit
+Version: 0.0.6
+Architecture: all
+Filename: enigma2-plugin-systemplugins-mountcockpit_0.0.6_all.ipk
+Size: 10064
+MD5Sum: 77307d574ef2250cfcb515ab1438b734
+
